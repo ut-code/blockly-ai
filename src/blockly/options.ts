@@ -1,6 +1,6 @@
 import Blockly from "blockly";
 import Ja from "blockly/msg/ja";
-import { CONSOLE_LOG } from "./blocks";
+import { CONSOLE_LOG, CENTER_OF_CLUSTER, ASSIGN_CLUSTER, DISTANCE_BETWEEN_X_AND_Y, CLUSTER_OF_X, Y_IS_SMALLER_THAN_X} from "./blocks";
 
 Blockly.setLocale(Ja);
 Object.assign(Blockly, {
@@ -16,6 +16,26 @@ const blocklyOptions = {
         kind: "category",
         name: "デバッグ",
         contents: [
+          {
+            kind: "block",
+            type: CENTER_OF_CLUSTER,
+          },
+          {
+            kind: "block",
+            type: ASSIGN_CLUSTER,
+          },
+          {
+            kind: "block",
+            type: DISTANCE_BETWEEN_X_AND_Y,
+          },
+          {
+            kind: "block",
+            type: CLUSTER_OF_X,
+          },
+          {
+            kind: "block",
+            type: Y_IS_SMALLER_THAN_X,
+          },
           {
             kind: "block",
             type: CONSOLE_LOG,
